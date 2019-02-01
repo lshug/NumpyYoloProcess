@@ -9,9 +9,9 @@ Based heavily on the output-processing code found in [xiaochus's Keras implement
 
 - **yolo_outputs** : a list containingg the outputs of YOLOv3
 - **anchors**: a parameter specifying which anchors to use (default: 'full')
--- if set to 'full', will use default YOLOv3 anchors 
--- if set to 'tiny', will use default tiny-yolov3 anchors
--- otherwise, it'll expect a numpy array of anchors to use
+  - if set to 'full', will use default YOLOv3 anchors 
+  - if set to 'tiny', will use default tiny-yolov3 anchors
+  - otherwise, it'll expect a numpy array of anchors to use
 - **num_classes**: the number of classes (80 by default)
 - **image_shape**: a tuple specifying the input image shape, height-first (default: (720,1280))
 - **max_boxes**: maximum number of boxes to return (default: 20)
