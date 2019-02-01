@@ -3,7 +3,7 @@
 
 This function takes in the outputs of YOLOv3 (and some parameters), interprets them using Numpy, and returns the detected boxes, box scores, and classes. 
 
-Based heavily on the output-processing code found in [xiaochus's Keras implementation of YOLOv3](https://github.com/xiaochus/YOLOv3), which uses Tensorflow-based code for building a graph for interpreting YOLO outputs. Most of the code in yolo_process.py is just is just a conversion that replaces TF functions with the respective Numpy functions. [Adrian Rosebrock's algorithm](https://www.pyimagesearch.com/2015/02/16/faster-non-maximum-suppression-python/) is used non-max suppression.
+Based heavily on the output-processing code found in [xiaochus's Keras implementation of YOLOv3](https://github.com/xiaochus/YOLOv3), which uses Tensorflow-based code for building a graph for interpreting YOLO outputs. Most of the code in yolo_process.py is just is just a conversion that replaces TF functions with the respective Numpy functions. [Adrian Rosebrock's algorithm](https://www.pyimagesearch.com/2015/02/16/faster-non-maximum-suppression-python/) with a modification for sorting by class scores is used for non-max suppression.
 
 ##### Parameters
 
