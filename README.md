@@ -7,7 +7,7 @@ Based heavily on the output-processing code found in [xiaochus's Keras implement
 
 ##### Parameters
 
-- **yolo_outputs** : a list containingg the outputs of YOLOv3
+- **yolo_outputs** : a list containing the outputs of YOLOv3
 - **anchors**: a parameter specifying which anchors to use (default: 'full')
   - if set to 'full', will use default YOLOv3 anchors 
   - if set to 'tiny', will use default tiny-yolov3 anchors
