@@ -1,3 +1,4 @@
+import numpy as np
 def process_yolo(yolo_outputs, anchors='full', num_classes=80, image_shape=(720,1280), max_boxes=20, score_threshold=0.6, iou_threshold=0.5):
     image_shape = np.array(image_shape)
     if anchors is 'full':
