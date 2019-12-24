@@ -6,7 +6,7 @@ def process_yolo(yolo_outputs, anchors='full', num_classes=80, image_shape=(720,
     elif anchors is 'tiny':
         anchors = np.array([[10.,14.],[23., 27.],[37.,58.],[81.,82.],[135.,169.],[344,319]])
     
-    def sigmoid(x:
+    def sigmoid(x):
         return 1/(1+np.exp(-x))
     def min(x, axis=None, keepdims=False):
         if isinstance(axis, list):
